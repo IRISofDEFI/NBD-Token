@@ -49,8 +49,9 @@ contract NBDToken is ERC20 {
         _mint(msg.sender, 1000 * 10 ** 18);
     }
 }
+## NBD Contract Address: 0x301D07422e5a70F7Ee1801977c8452103D2FCe59
 
-🔍 Components
+## 🔍 Components
 import ... ERC20.sol
 This imports OpenZeppelin’s secure and standardized implementation of the ERC20 token interface.
 
