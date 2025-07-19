@@ -35,21 +35,7 @@ The contract mints a fixed initial supply of **1,000 tokens** (with 18 decimals)
 - OpenZeppelin Contracts (ERC20 standard)
 - Ethereum-compatible networks (Sepolia, Goerli, Mainnet, etc.)
 
----
-
-## Contract Explanation
-
-```solidity
-pragma solidity ^0.8.0;
-
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-
-contract NBDToken is ERC20 {
-    constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol) {
-        _mint(msg.sender, 1000 * 10 ** 18);
-    }
-}
-## NBD Contract Address: 0x301D07422e5a70F7Ee1801977c8452103D2FCe59
+- ## NBD Contract Address: 0x301D07422e5a70F7Ee1801977c8452103D2FCe59
 
 ## 🔍 Components
 import ... ERC20.sol
@@ -114,4 +100,20 @@ This project is licensed under the MIT License.
 ---
 
 Let me know if you'd like a version that includes logo badges, deployment scripts, test instructions, or hardcoded token values (i.e., fixed name and symbol instead of parameters).
+
+
+---
+
+## Contract Explanation
+
+```solidity
+pragma solidity ^0.8.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
+
+contract NBDToken is ERC20 {
+    constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol) {
+        _mint(msg.sender, 1000 * 10 ** 18);
+    }
+}
 
